@@ -2,7 +2,7 @@ name: Construire et pousser les images Docker sur Docker Hub et mettre à jour l
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 jobs:
   build_and_push:

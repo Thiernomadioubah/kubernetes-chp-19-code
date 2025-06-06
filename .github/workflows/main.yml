@@ -52,8 +52,8 @@ jobs:
           cd kubernetes-chp-19-infra/k8s
 
           NEW_TAG=$(echo $GITHUB_SHA | cut -c1-7)
-          sed -i "s|dymafr/chap19-front\(:[a-zA-Z0-9_.-]*\)\?|dymafr/chap19-front:${NEW_TAG}|g" frontend-deployment.yml
-          sed -i "s|dymafr/chap19-node\(:[a-zA-Z0-9_.-]*\)\?|dymafr/chap19-node:${NEW_TAG}|g" api-deployment.yml
+          sed -i "s|thierno9/projet5-gke-vue\(:[a-zA-Z0-9_.-]*\)\?|thierno9/projet5-gke-vue:${NEW_TAG}|g" frontend-deployment.yml
+          sed -i "s|thierno9/projet5-gke-node-api\(:[a-zA-Z0-9_.-]*\)\?|thierno9/projet5-gke-node-api:${NEW_TAG}|g" api-deployment.yml
           git config --global user.name "GitHub Actions"
           git config --global user.email "github-actions@example.com"
           git add .
